@@ -1,7 +1,7 @@
 // Hide Country Column
 $('tr>th:nth-child(2)').hide()
 // Rank Size
-$('tr>td:nth-child(1)').css('font-size','30px')
+$('tr>td:nth-child(1)').css('font-size','30px').css('margin-left',"15px")
 
 // Hide R06
 $('tr>td>font').css('color','red').replaceWith(function(e){
@@ -11,28 +11,25 @@ $('tr>td>font').css('color','red').replaceWith(function(e){
     teamstr = str
     str = "<b>" + str + "</b>"
     if (teamstr == "SparkleMotion"){
-        str = appendname(str,"Some Dude, a Girl, and Pizza")
+        str = appendname(str,"Chris Lock, Vladimir Adam, David McCarthy")
     }
     if (teamstr == "Team4"){
-        str = appendname(str,"Some Dude, a Girl, and Pizza")
+        str = appendname(str,"Rotem Raviv, Alec Boutin, Eric Fivash")
     }
     if (teamstr == "ShortSited"){
-        str = appendname(str,"Some Dude, a Girl, and Pizza")
+        str = appendname(str,"Joseph Colicchio, Saili Raje, and Site Mao")
     }
     if (teamstr == "TeamJacob"){
-        str = appendname(str,"Some Dude, a Girl, and Pizza")
+        str = appendname(str,"Joel Dick, Jacob Anderson, Henry Huang")
     }
     if (teamstr == "AntiCasuals"){
-        str = appendname(str,"Some Dude, a Girl, and Pizza")
+        str = appendname(str,"Patrick, Dhaman, and Kasual")
     }
     if (teamstr == "BobbaMilkTEA"){
-        str = appendname(str,"Some Dude, a Girl, and Pizza")
-    }
-    if (teamstr == "ATwoManTeam"){
-        str = appendname(str,"Some Dude, a Girl, and Pizza")
+        str = appendname(str,"Edward, Tim, Alvin")
     }
     if (teamstr == "SilverbackCodeMonkys"){
-        str = appendname(str,"Some Dude, a Girl, and Pizza")
+        str = appendname(str,"Hoo heeh hah hah!")
     }
     return str
 })
@@ -41,3 +38,7 @@ function appendname(istr, append){
     istr = istr + '<font size="1" ><br>* ' + append + "</font>"
     return istr
 }
+
+// Append Ian's thing in an iFrame
+
+$('table[class="Listing"]').after('<iframe frameborder="no" src="http://ruckus.rumpusradio.com/ieeextreme/" width="100%" height="50%">')
