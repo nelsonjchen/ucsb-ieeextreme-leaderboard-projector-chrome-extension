@@ -1,5 +1,5 @@
 // Hide Country Column
-$('tr>th:nth-child(2)').hide()
+$('tr>th:nth-child(2)[width!="10%"]').hide()
 // Rank Size
 $('tr>td:nth-child(1)').css('font-size','30px').css('margin-left',"15px")
 
