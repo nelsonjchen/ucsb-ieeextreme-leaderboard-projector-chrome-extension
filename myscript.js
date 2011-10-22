@@ -1,5 +1,7 @@
 // Hide Country Column
 $('tr>th:nth-child(2)').hide()
+// Rank Size
+$('tr>td:nth-child(1)').css('font-size','30px')
 
 // Hide R06
 $('tr>td>font').css('color','red').replaceWith(function(e){
