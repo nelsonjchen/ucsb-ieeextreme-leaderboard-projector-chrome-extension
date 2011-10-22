@@ -1,0 +1,14 @@
+.pulsing {
+-webkit-animation: pulse 0.6s infinite; /*Tells it to pulse forever every 0.6 seconds.*/
+-webkit-animation-direction: alternate;
+-webkit-animation-timing-function: ease-out; /* Makes The Animation Smoother */
+padding:5px;
+width: 270px; /* Set this to the width/height of your text, otherwise it will take up the whole page! */
+font-family: Helvetica, Arial;
+}
+/*This code gives it that nice, feathered shadowy effect. */
+@-webkit-keyframes pulse {
+0% {
+-webkit-box-shadow: 0 0 15px #ff0000;
+box-shadow: 0 0 15px #ff0000;
+}

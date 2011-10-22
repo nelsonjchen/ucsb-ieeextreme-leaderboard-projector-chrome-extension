@@ -7,7 +7,8 @@
   },
     "content_scripts": [
     {  "matches": ["http://176.34.253.66/~mooshak/cgi-bin/execute/*"],
-    "js": ["jquery.js", "myscript.js"] }
+    "js": ["jquery.js", "myscript.js"],
+    "css": ["mystyle.css"] }
     ]
 }
 
