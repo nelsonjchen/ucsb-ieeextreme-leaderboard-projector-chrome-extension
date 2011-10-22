@@ -5,8 +5,9 @@
   "browser_action": {
     "default_icon": "icon.png"
   },
-  "permissions": [
-    "http://api.flickr.com/"
-  ]
+    "content_scripts": [
+    {  "matches": ["http://176.34.253.66/~mooshak/cgi-bin/execute/*"],
+    "js": ["jquery.js"] }
+    ]
 }
 
